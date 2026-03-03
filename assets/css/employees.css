@@ -1,0 +1,157 @@
+﻿/* ========================================================================
+   EMPLOYEE TABLE - Compact Layout
+   ======================================================================== */
+
+/* Compact table for employees */
+.dashboard-content .emp-table-wrap {
+  overflow-x: auto;
+  overflow-y: visible;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Scrollbar styling for emp-table-wrap */
+.dashboard-content .emp-table-wrap::-webkit-scrollbar {
+  height: 8px;
+}
+
+.dashboard-content .emp-table-wrap::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.dashboard-content .emp-table-wrap::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.3);
+  border-radius: 4px;
+}
+
+.dashboard-content .emp-table-wrap::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.5);
+}
+
+.dashboard-content .emp-table-wrap table {
+  min-width: 45rem; /* Ensure table scrolls horizontally */
+}
+
+.dashboard-content table.compact {
+  font-size: var(--text-xs);
+}
+
+.dashboard-content table.compact th,
+.dashboard-content table.compact td {
+  padding: var(--space-2) var(--space-3);
+  white-space: nowrap;
+}
+
+.dashboard-content table.compact input,
+.dashboard-content table.compact select {
+  padding: var(--space-2);
+  font-size: var(--text-xs);
+  min-width: 0;
+}
+
+.dashboard-content table.compact input[type="number"] {
+  width: 70px;
+}
+
+.dashboard-content table.compact input[type="time"] {
+  width: 100px;
+}
+
+.dashboard-content table.compact select {
+  width: auto;
+  min-width: 80px;
+}
+
+.dashboard-content .emp-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  flex-wrap: nowrap;
+}
+
+.dashboard-content .emp-edit-form {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin: 0;
+}
+
+.dashboard-content .emp-remove-form {
+  display: inline;
+  margin: 0;
+}
+
+.dashboard-content .emp-btns {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.dashboard-content .btn.xs {
+  padding: 4px 8px;
+  font-size: 10px;
+}
+
+/* Inline form for time-out editing */
+.dashboard-content .inline-form {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: 0;
+}
+
+.dashboard-content .inline-form input[type="time"],
+.dashboard-content .inline-form input[type="text"].time-input {
+  padding: var(--space-2);
+  font-size: var(--text-xs);
+  width: 100px;
+}
+
+/* Date and Time Input Styling - Green Icons */
+.dashboard-content input[type="date"].date-input,
+.dashboard-content input.date-input,
+.dashboard-content input.time-input {
+  color-scheme: dark;
+}
+
+.dashboard-content input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(70%) sepia(50%) saturate(400%) hue-rotate(90deg) brightness(1.1);
+  cursor: pointer;
+}
+
+.dashboard-content input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(70%) sepia(50%) saturate(400%) hue-rotate(90deg) brightness(1.1);
+  cursor: pointer;
+}
+
+[data-theme="light"] .dashboard-content input[type="date"].date-input,
+[data-theme="light"] .dashboard-content input.date-input,
+[data-theme="light"] .dashboard-content input.time-input {
+  color-scheme: light;
+}
+
+/* Header Brand (WageWise) - Upper Right */
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.header-brand-text {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--dash-text);
+  letter-spacing: -0.01em;
+}
+
+.header-brand-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.theme-icon {
+  font-size: 1.3rem;
+  line-height: 1;
+}

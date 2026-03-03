@@ -1,0 +1,519 @@
+﻿/* ========================================================================
+   EMPLOYEE PROFILE CARDS
+   ======================================================================== */
+
+.employees-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.employees-header h3 {
+  margin: 0;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 4px;
+  background: var(--dash-surface-hover);
+  padding: 4px;
+  border-radius: var(--radius-md);
+}
+
+.view-btn {
+  padding: 8px 12px;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  color: var(--dash-text-secondary);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-btn:hover {
+  color: var(--dash-text);
+  background: var(--dash-surface);
+}
+
+.view-btn.active {
+  background: var(--purple-500);
+  color: white;
+}
+
+.employee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.employee-card {
+  background: var(--dash-surface);
+  border: 1px solid var(--dash-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.employee-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: var(--purple-400);
+}
+
+.employee-card.editing {
+  border-color: var(--mint-400);
+}
+
+.emp-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: var(--dash-surface-hover);
+  border-bottom: 1px solid var(--dash-border);
+}
+
+.emp-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--purple-400), var(--purple-600));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.emp-main-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.emp-main-info h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dash-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.emp-position {
+  margin: 2px 0 0;
+  font-size: 0.8rem;
+  color: var(--dash-text-secondary);
+}
+
+.emp-status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.emp-status.active {
+  background: rgba(52, 199, 89, 0.15);
+  color: #34c759;
+}
+
+.emp-status.inactive {
+  background: rgba(255, 159, 10, 0.15);
+  color: #ff9f0a;
+}
+
+.emp-card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.emp-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: var(--dash-text-secondary);
+}
+
+.emp-detail svg {
+  color: var(--purple-400);
+  flex-shrink: 0;
+}
+
+.emp-card-footer {
+  padding: 12px 16px;
+  background: var(--dash-surface-hover);
+  border-top: 1px solid var(--dash-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.emp-schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.schedule-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  color: var(--dash-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.schedule-label svg {
+  color: var(--mint-400);
+}
+
+.schedule-time {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--dash-text);
+}
+
+/* Schedule days display (employee cards) */
+.schedule-days-display {
+  display: flex;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.day-badge {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 600;
+  border-radius: 50%;
+  background: var(--dash-surface);
+  color: var(--dash-text-secondary);
+  border: 1px solid var(--dash-border);
+}
+
+.day-badge.active {
+  background: var(--mint-500);
+  color: var(--text-on-accent);
+  border-color: var(--mint-400);
+}
+
+/* Schedule days selector (add form) */
+.schedule-days-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.preset-btns {
+  display: flex;
+  gap: 8px;
+}
+
+.day-checkboxes {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.day-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: var(--dash-surface);
+  border: 1px solid var(--dash-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.85rem;
+}
+
+.day-checkbox:hover {
+  background: var(--dash-surface-hover);
+  border-color: var(--mint-400);
+}
+
+.day-checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--mint-500);
+}
+
+.day-checkbox:has(input:checked) {
+  background: rgba(111, 201, 127, 0.15);
+  border-color: var(--mint-400);
+  color: var(--mint-400);
+}
+
+/* Small day checkboxes for edit form */
+.day-checkboxes.inline {
+  display: flex;
+  gap: 4px;
+}
+
+.day-checkbox-sm {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px 8px;
+  background: var(--dash-surface);
+  border: 1px solid var(--dash-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.day-checkbox-sm input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  accent-color: var(--mint-500);
+}
+
+.day-checkbox-sm:has(input:checked) {
+  background: rgba(111, 201, 127, 0.15);
+  border-color: var(--mint-400);
+}
+
+/* Multi-Schedule Blocks */
+.schedule-section {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--dash-border);
+}
+
+.schedule-section > label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.schedule-section .hint {
+  font-size: 0.8rem;
+  color: var(--dash-text-secondary);
+  margin-bottom: 12px;
+}
+
+.schedule-block {
+  background: var(--dash-surface);
+  border: 1px solid var(--dash-border);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.schedule-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.schedule-block-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.schedule-time-row {
+  display: flex;
+  gap: 12px;
+}
+
+.schedule-time-row > div {
+  flex: 1;
+}
+
+.schedule-time-row label {
+  font-size: 0.75rem;
+  color: var(--dash-text-secondary);
+  margin-bottom: 4px;
+  display: block;
+}
+
+.schedule-days-row label {
+  font-size: 0.75rem;
+  color: var(--dash-text-secondary);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.day-checkboxes-inline {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+/* Schedule block display in cards */
+.schedule-block-display {
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed var(--dash-border);
+}
+
+.schedule-block-display:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* Edit form schedule blocks */
+.edit-schedules-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.edit-schedule-block {
+  background: var(--dash-surface-hover);
+  border: 1px solid var(--dash-border);
+  border-radius: var(--radius-sm);
+  padding: 8px;
+}
+
+.edit-schedule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+}
+
+.edit-schedule-times {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.edit-schedule-times input[type="time"] {
+  flex: 1;
+  padding: 4px 6px;
+  font-size: 0.8rem;
+}
+
+.edit-schedule-times span {
+  font-size: 0.75rem;
+  color: var(--dash-text-secondary);
+}
+
+.emp-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.emp-pay-type {
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.emp-pay-type.hourly {
+  background: rgba(139, 92, 246, 0.15);
+  color: var(--purple-400);
+}
+
+.emp-pay-type.fixed {
+  background: rgba(52, 199, 89, 0.15);
+  color: #34c759;
+}
+
+.emp-hours {
+  font-size: 0.75rem;
+  color: var(--dash-text-secondary);
+}
+
+.emp-card-actions {
+  padding: 12px 16px;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  border-top: 1px solid var(--dash-border);
+}
+
+.emp-card-edit {
+  padding: 16px;
+  border-top: 1px solid var(--dash-border);
+  background: var(--dash-surface-hover);
+}
+
+.emp-card-edit .edit-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.emp-card-edit .edit-row label {
+  font-size: 0.75rem;
+  color: var(--dash-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.emp-card-edit .edit-row input,
+.emp-card-edit .edit-row select {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+}
+
+.emp-card-edit .edit-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+/* Light mode adjustments */
+[data-theme="light"] .employee-card {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .employee-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .emp-card-header,
+[data-theme="light"] .emp-card-footer,
+[data-theme="light"] .emp-card-edit {
+  background: #f8f7fc;
+}
+
+[data-theme="light"] .emp-main-info h4 {
+  color: #1a0a2e;
+}
+
+[data-theme="light"] .schedule-time {
+  color: #1a0a2e;
+}
+
+[data-theme="light"] .view-toggle {
+  background: #f0eef5;
+}
+
+[data-theme="light"] .view-btn:hover {
+  background: #ffffff;
+}

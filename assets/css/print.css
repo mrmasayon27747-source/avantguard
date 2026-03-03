@@ -1,0 +1,158 @@
+﻿/* ========================================================================
+   PRINT STYLES
+   ======================================================================== */
+@media print {
+  /* Hide navigation and interactive elements */
+  .sidebar,
+  .topbar,
+  .nav-item,
+  .navbar,
+  .btn,
+  .form-actions,
+  form,
+  .no-print,
+  #previewBtn,
+  .action-btns,
+  .status-badge,
+  .view-toggle {
+    display: none !important;
+  }
+  
+  /* Reset background and colors for print */
+  body,
+  html,
+  .dashboard-container,
+  .dashboard-layout,
+  .dashboard-main,
+  .main-content {
+    background: white !important;
+    color: black !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .card {
+    background: white !important;
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+    margin-bottom: 20px !important;
+    padding: 15px !important;
+    page-break-inside: avoid;
+  }
+  
+  /* Table styling for print */
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    font-size: 11pt !important;
+  }
+  
+  th, td {
+    border: 1px solid #333 !important;
+    padding: 8px !important;
+    text-align: left !important;
+    color: black !important;
+    background: white !important;
+  }
+  
+  th {
+    background: #f0f0f0 !important;
+    font-weight: bold !important;
+  }
+  
+  /* Reset text colors */
+  h1, h2, h3, h4, h5, h6, p, span, td, th {
+    color: black !important;
+  }
+  
+  /* Highlight net pay */
+  td[style*="mint"], td[style*="font-weight: 600"] {
+    font-weight: bold !important;
+  }
+  
+  /* Page setup */
+  @page {
+    size: A4 landscape;
+    margin: 1cm;
+  }
+  
+  /* Print header */
+  .print-header {
+    display: block !important;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+  }
+  
+  .print-header h2 {
+    margin: 0 0 5px 0;
+    font-size: 18pt;
+  }
+  
+  .print-header p {
+    margin: 0;
+    font-size: 10pt;
+  }
+}
+
+/* Print header - hidden by default, shown only when printing */
+.print-header {
+  display: none;
+}
+
+/* Table responsive wrapper */
+.table-responsive {
+  overflow-x: auto;
+  overflow-y: visible;
+  width: 100%;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 -0.5rem;
+  padding: 0 0.5rem;
+}
+
+.table-responsive table {
+  min-width: 50rem; /* Ensure table has enough width to scroll */
+  width: max-content;
+}
+
+/* Scrollbar styling for table-responsive */
+.table-responsive::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.3);
+  border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.5);
+}
+
+/* Print button styling */
+.btn-print {
+  background: rgba(139, 92, 246, 0.15);
+  color: var(--purple-400);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.btn-print:hover {
+  background: rgba(139, 92, 246, 0.25);
+}
+
+.btn-pdf {
+  background: rgba(255, 59, 48, 0.15);
+  color: #ff6b6b;
+  border: 1px solid rgba(255, 59, 48, 0.3);
+}
+
+.btn-pdf:hover {
+  background: rgba(255, 59, 48, 0.25);
+}

@@ -1,0 +1,666 @@
+﻿/* ========================================================================
+   LIGHT MODE SPECIFIC STYLES
+   ======================================================================== */
+
+[data-theme="light"] .sidebar {
+  background: var(--sidebar-bg);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .nav-item {
+  color: #4b5563;
+}
+
+[data-theme="light"] .nav-item:hover {
+  background: rgba(139, 92, 246, 0.08);
+  color: var(--purple-600);
+}
+
+[data-theme="light"] .nav-item.active {
+  color: #ffffff;
+}
+
+[data-theme="light"] .logo-text {
+  color: #1a0a2e;
+}
+
+[data-theme="light"] .logo-text small {
+  color: #6b7280;
+}
+
+[data-theme="light"] .dashboard-header {
+  background: #f8f7fc;
+  border-bottom-color: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .search-input {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #1a0a2e;
+}
+
+[data-theme="light"] .search-input::placeholder {
+  color: #9ca3af;
+}
+
+[data-theme="light"] .theme-toggle,
+[data-theme="light"] .notification-btn {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #4b5563;
+}
+
+[data-theme="light"] .theme-toggle:hover,
+[data-theme="light"] .notification-btn:hover {
+  background: #f3f2f7;
+  color: #1a0a2e;
+}
+
+[data-theme="light"] .welcome-section {
+  background: linear-gradient(135deg, var(--purple-500), var(--purple-600));
+}
+
+[data-theme="light"] .card,
+[data-theme="light"] .dash-card,
+[data-theme="light"] .stat-card {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .card h3,
+[data-theme="light"] .dash-card h3,
+[data-theme="light"] .card-header h3 {
+  color: #1a0a2e;
+}
+
+[data-theme="light"] .card p {
+  color: #6b7280;
+}
+
+[data-theme="light"] table th {
+  background: #f8f7fc;
+  color: #4b5563;
+}
+
+[data-theme="light"] table td {
+  color: #1a0a2e;
+}
+
+[data-theme="light"] table tbody tr:hover {
+  background: #f8f7fc;
+}
+
+[data-theme="light"] .sidebar-user {
+  background: #f8f7fc;
+}
+
+[data-theme="light"] .user-name {
+  color: #1a0a2e;
+}
+
+[data-theme="light"] .user-role {
+  color: #6b7280;
+}
+
+[data-theme="light"] .header-brand-text {
+  color: #1a0a2e;
+}
+
+[data-theme="light"] .stat-value {
+  color: #1a0a2e;
+}
+
+[data-theme="light"] .action-item {
+  background: #f8f7fc;
+}
+
+[data-theme="light"] .action-item span {
+  color: #4b5563;
+}
+
+[data-theme="light"] .activity-name,
+[data-theme="light"] .employee-name {
+  color: #1a0a2e;
+}
+
+[data-theme="light"] input,
+[data-theme="light"] select,
+[data-theme="light"] textarea {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.12);
+  color: #1a0a2e;
+}
+
+/* Select option styling for both themes */
+select option {
+  background: #1e1535 !important;
+  color: #ffffff !important;
+}
+
+[data-theme="light"] select option {
+  background: #ffffff !important;
+  color: #1a0a2e !important;
+}
+
+[data-theme="light"] label {
+  color: #4b5563;
+}
+
+/* Additional light mode fixes for visibility */
+[data-theme="light"] .notice {
+  color: #1a0a2e;
+}
+
+[data-theme="light"] .dashboard-content .notice {
+  color: #1a0a2e;
+}
+
+[data-theme="light"] .payslip-modal {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="light"] .payslip-modal-content {
+  background: #ffffff;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="light"] .payslip-modal-header {
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .payslip-modal-header h3 {
+  color: #1a0a2e;
+}
+
+[data-theme="light"] .modal-close {
+  color: #9ca3af;
+}
+
+[data-theme="light"] .payslip-detail-table th {
+  color: #6b7280;
+}
+
+[data-theme="light"] .payslip-detail-table td {
+  color: #1a0a2e;
+}
+
+[data-theme="light"] .payslip-detail-table th,
+[data-theme="light"] .payslip-detail-table td {
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .payslip-modal-footer {
+  border-top-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Fix green text on white - darken accent colors for readability */
+[data-theme="light"] td[style*="mint-400"],
+[data-theme="light"] span[style*="mint-400"] {
+  color: #248a3d !important;
+}
+
+[data-theme="light"] .emp-status.active {
+  color: #248a3d;
+}
+
+[data-theme="light"] .schedule-label svg {
+  color: #248a3d;
+}
+
+[data-theme="light"] .emp-detail svg {
+  color: var(--purple-600);
+}
+
+[data-theme="light"] .emp-position {
+  color: #6b7280;
+}
+
+[data-theme="light"] .emp-detail {
+  color: #4b5563;
+}
+
+[data-theme="light"] .emp-hours {
+  color: #6b7280;
+}
+
+[data-theme="light"] .schedule-label {
+  color: #6b7280;
+}
+
+[data-theme="light"] .schedule-time {
+  color: #1a0a2e;
+}
+
+[data-theme="light"] .schedule-block-display {
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .day-badge {
+  background: #f3f2f7;
+  color: #9ca3af;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .day-badge.active {
+  background: #248a3d;
+  color: #ffffff;
+  border-color: #248a3d;
+}
+
+[data-theme="light"] .schedule-block {
+  background: #f8f7fc;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .schedule-block-header {
+  color: #1a0a2e;
+}
+
+[data-theme="light"] .day-checkbox-sm {
+  background: #f8f7fc;
+  border-color: rgba(0, 0, 0, 0.12);
+  color: #4b5563;
+}
+
+[data-theme="light"] .edit-schedule-block {
+  background: #f3f2f7;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .edit-schedule-header {
+  color: #4b5563;
+}
+
+[data-theme="light"] .edit-schedule-times span {
+  color: #6b7280;
+}
+
+[data-theme="light"] .emp-card-edit .edit-row label {
+  color: #6b7280;
+}
+
+/* Light mode for profile page elements */
+[data-theme="light"] .profile-avatar-large {
+  color: #ffffff;
+}
+
+[data-theme="light"] .profile-info h2 {
+  color: #1a0a2e;
+}
+
+[data-theme="light"] .profile-info p {
+  color: #6b7280;
+}
+
+[data-theme="light"] .profile-form input,
+[data-theme="light"] .profile-form textarea {
+  background: #f8f7fc;
+  border-color: rgba(0, 0, 0, 0.12);
+  color: #1a0a2e;
+}
+
+/* Light mode upload area */
+[data-theme="light"] .upload-area {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] .upload-area:hover {
+  border-color: var(--purple-400);
+  background: #f8f7fc;
+}
+
+[data-theme="light"] .upload-icon {
+  color: #9ca3af;
+}
+
+[data-theme="light"] .upload-text {
+  color: #4b5563;
+}
+
+[data-theme="light"] .upload-hint {
+  color: #9ca3af;
+}
+
+/* Light mode for nav dropdown */
+[data-theme="light"] .nav-dropdown-toggle {
+  color: #4b5563;
+}
+
+[data-theme="light"] .nav-dropdown-toggle:hover {
+  background: rgba(139, 92, 246, 0.08);
+  color: var(--purple-600);
+}
+
+[data-theme="light"] .nav-subitem {
+  color: #6b7280;
+}
+
+[data-theme="light"] .nav-subitem:hover {
+  color: var(--purple-600);
+  background: rgba(139, 92, 246, 0.06);
+}
+
+[data-theme="light"] .nav-subitem.active {
+  color: var(--purple-600);
+  background: rgba(139, 92, 246, 0.08);
+}
+
+/* Light mode status badges */
+[data-theme="light"] .status-badge.released {
+  color: #248a3d;
+}
+
+[data-theme="light"] .status-badge.draft {
+  color: #c77c02;
+}
+
+/* Light mode calendar */
+[data-theme="light"] .calendar-widget {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .calendar-header h3 {
+  color: #1a0a2e;
+}
+
+[data-theme="light"] .calendar-day {
+  color: #4b5563;
+}
+
+[data-theme="light"] .calendar-nav button {
+  background: #f3f2f7;
+  color: #4b5563;
+}
+
+/* Light mode task panel */
+[data-theme="light"] .task-panel {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .task-panel-header h3 {
+  color: #1a0a2e;
+}
+
+[data-theme="light"] .task-item {
+  background: #f8f7fc;
+}
+
+[data-theme="light"] .task-title {
+  color: #1a0a2e;
+}
+
+[data-theme="light"] .task-checkbox {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Fix sidebar user section in light mode */
+[data-theme="light"] .sidebar-user {
+  background: #f3f2f7;
+}
+
+[data-theme="light"] .user-avatar {
+  color: #ffffff;
+}
+
+/* Light mode payroll summary */
+[data-theme="light"] .payroll-summary {
+  background: #f3f2f7 !important;
+}
+
+[data-theme="light"] .payroll-summary p {
+  color: #1a0a2e;
+}
+
+/* ========================================================================
+   COMPREHENSIVE LIGHT MODE FIXES
+   Body, overlays, worker nav/panels, admin report text visibility
+   ======================================================================== */
+
+/* Body: neutralise the dark gradient and overlays */
+[data-theme="light"] body {
+  background: #f0eef5;
+  animation: none;
+}
+[data-theme="light"] body::before,
+[data-theme="light"] body::after {
+  display: none;
+}
+
+/* Headings – ensure dark text everywhere */
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] h6 {
+  color: #1a0a2e;
+}
+
+/* Paragraphs */
+[data-theme="light"] p {
+  color: #4b5563;
+}
+
+/* Links */
+[data-theme="light"] a {
+  color: var(--purple-600);
+}
+[data-theme="light"] a:hover {
+  color: var(--purple-700);
+}
+
+/* Dashboard content area */
+[data-theme="light"] .dashboard-content {
+  color: #1a0a2e;
+}
+
+/* Sidebar footer / logout */
+[data-theme="light"] .sidebar-footer {
+  border-top-color: rgba(0, 0, 0, 0.06);
+}
+[data-theme="light"] .logout-btn {
+  color: #6b7280;
+}
+[data-theme="light"] .logout-btn:hover {
+  color: #ef4444;
+}
+
+/* Stats cards text */
+[data-theme="light"] .stat-label {
+  color: #6b7280;
+}
+
+/* Welcome section subtitle (on gradient bg – keep light) */
+[data-theme="light"] .welcome-subtitle {
+  color: rgba(255, 255, 255, 0.85);
+}
+[data-theme="light"] .welcome-greeting {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Activity / recent items */
+[data-theme="light"] .activity-detail {
+  color: #6b7280;
+}
+[data-theme="light"] .activity-time {
+  color: #9ca3af;
+}
+
+/* Card header links */
+[data-theme="light"] .view-all {
+  color: var(--purple-600);
+}
+[data-theme="light"] .view-all:hover {
+  color: var(--purple-700);
+}
+
+/* Empty state text */
+[data-theme="light"] .empty-state p {
+  color: #6b7280;
+}
+
+/* Buttons secondary variant */
+[data-theme="light"] .btn.secondary {
+  background: #f3f2f7;
+  color: #4b5563;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+[data-theme="light"] .btn.secondary:hover {
+  background: #e8e7ec;
+  color: #1a0a2e;
+}
+
+/* ----------------------------------------
+   Sidebar dropdown sub-items (Reports → Payslips / EOD / Devotionals)
+   ---------------------------------------- */
+[data-theme="light"] .nav-dropdown-menu {
+  background: transparent;
+}
+[data-theme="light"] .nav-subitem {
+  color: #4b5563;
+}
+[data-theme="light"] .nav-subitem:hover {
+  color: var(--purple-600);
+  background: rgba(139, 92, 246, 0.06);
+}
+[data-theme="light"] .nav-subitem.active {
+  color: var(--purple-700);
+  background: rgba(139, 92, 246, 0.10);
+  font-weight: 600;
+}
+
+/* Dropdown arrow icon colour */
+[data-theme="light"] .dropdown-arrow {
+  color: #9ca3af;
+}
+
+/* ----------------------------------------
+   Admin reports – fix white/invisible text
+   ---------------------------------------- */
+
+/* Payslip table inline-style overrides (mint-400 text) */
+[data-theme="light"] td[style*="mint-400"],
+[data-theme="light"] span[style*="mint-400"],
+[data-theme="light"] td[style*="mint-400;"],
+[data-theme="light"] tfoot td[style*="mint-400"] {
+  color: #16803c !important;
+}
+
+/* Payslip modal light mode */
+[data-theme="light"] .payslip-modal {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-theme="light"] .payslip-modal-content {
+  background: #ffffff;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+[data-theme="light"] .payslip-modal-header {
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+[data-theme="light"] .payslip-modal-header h3 {
+  color: #1a0a2e;
+}
+[data-theme="light"] .payslip-modal-body {
+  color: #1a0a2e;
+}
+[data-theme="light"] .payslip-detail-table th {
+  color: #6b7280;
+}
+[data-theme="light"] .payslip-detail-table td {
+  color: #1a0a2e;
+}
+
+/* EOD report cards on admin page */
+[data-theme="light"] .eod-card {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+[data-theme="light"] .eod-header {
+  background: #f8f7fc;
+  border-bottom-color: rgba(0, 0, 0, 0.06);
+}
+[data-theme="light"] .emp-name {
+  color: #1a0a2e;
+}
+[data-theme="light"] .eod-date,
+[data-theme="light"] .eod-time {
+  color: #6b7280;
+}
+[data-theme="light"] .eod-content h4 {
+  color: #6b7280;
+}
+[data-theme="light"] .eod-content p {
+  color: #1a0a2e;
+}
+
+/* Devotional cards on admin page */
+[data-theme="light"] .devotional-card {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+[data-theme="light"] .devotional-info {
+  background: #f8f7fc;
+}
+[data-theme="light"] .devotional-date {
+  color: #6b7280;
+}
+[data-theme="light"] .devotional-meta .emp-name {
+  color: #1a0a2e;
+}
+
+/* ----------------------------------------
+   Worker task panel light mode
+   ---------------------------------------- */
+[data-theme="light"] .task-meta .task-tag {
+  color: #ffffff;
+}
+[data-theme="light"] .task-due {
+  color: #6b7280;
+}
+[data-theme="light"] .task-item.completed .task-title {
+  color: #9ca3af;
+}
+
+/* ----------------------------------------
+   Misc fixes for form/table elements
+   ---------------------------------------- */
+[data-theme="light"] .compact-card {
+  background: #ffffff;
+}
+[data-theme="light"] tfoot {
+  background: #f8f7fc !important;
+}
+[data-theme="light"] tfoot td {
+  color: #1a0a2e;
+}
+[data-theme="light"] .status-badge.released {
+  color: #16803c;
+}
+[data-theme="light"] .status-badge.draft {
+  color: #b45309;
+}
+[data-theme="light"] .btn-danger {
+  background: rgba(255, 59, 48, 0.08);
+  color: #dc2626;
+  border-color: rgba(255, 59, 48, 0.2);
+}
+[data-theme="light"] .btn-danger:hover {
+  background: rgba(255, 59, 48, 0.15);
+}
+
+/* Row link text in light mode dashboard tables */
+[data-theme="light"] .dashboard-content table a {
+  color: var(--purple-600);
+}
+[data-theme="light"] .dashboard-content table a:hover {
+  color: var(--purple-700);
+}
+
+/* Light mode - Fix mint/green colored text for readability */
+[data-theme="light"] [style*="color: var(--mint-400)"],
+[data-theme="light"] [style*="color:var(--mint-400)"] {
+  color: #248a3d !important;
+}

@@ -1,0 +1,395 @@
+﻿/* ========================================================================
+   CUSTOM DATE & TIME PICKERS
+   ======================================================================== */
+
+/* Custom Date Input Styling */
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background: var(--dash-surface);
+  border: 1px solid var(--dash-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  color: var(--dash-text);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+input[type="date"]:hover {
+  border-color: var(--purple-400);
+}
+
+input[type="date"]:focus {
+  outline: none;
+  border-color: var(--purple-400);
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.8);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  transition: background var(--duration-fast) var(--ease-out);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  background: rgba(139, 92, 246, 0.2);
+}
+
+[data-theme="light"] input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.2);
+}
+
+/* Custom Time Picker */
+.time-picker-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  z-index: 100;
+}
+
+.time-picker-display {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: #1e1535;
+  border: 1px solid var(--dash-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  color: var(--dash-text);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+  min-width: 140px;
+  height: 42px;
+  box-sizing: border-box;
+}
+
+[data-theme="light"] .time-picker-display {
+  background: #ffffff;
+}
+
+.time-picker-display:hover {
+  border-color: var(--purple-400);
+}
+
+.time-picker-display:focus-within {
+  border-color: var(--purple-400);
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+}
+
+.time-picker-display svg {
+  width: 16px;
+  height: 16px;
+  color: var(--dash-text-muted);
+  flex-shrink: 0;
+}
+
+.time-text-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: var(--dash-text);
+  font-size: var(--text-sm);
+  font-family: var(--font-body);
+  outline: none;
+  min-width: 0;
+}
+
+.time-text-input::placeholder {
+  color: var(--dash-text-muted);
+}
+
+.time-picker-dropdown {
+  position: fixed;
+  z-index: 99999;
+  background: #1e1535;
+  border: 1px solid var(--dash-border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  padding: var(--space-3);
+  display: none;
+  min-width: 200px;
+}
+
+[data-theme="light"] .time-picker-dropdown {
+  background: #ffffff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.time-picker-dropdown.open {
+  display: block;
+}
+
+.time-picker-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  justify-content: center;
+}
+
+.time-picker-select {
+  background: #2a1f45;
+  border: 1px solid var(--dash-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3);
+  color: var(--dash-text);
+  font-size: var(--text-base);
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  min-width: 55px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+[data-theme="light"] .time-picker-select {
+  background: #f3f2f7;
+}
+
+.time-picker-select:focus {
+  outline: none;
+  border-color: var(--purple-400);
+}
+
+.time-picker-select option {
+  background: #1e1535;
+  color: var(--dash-text);
+}
+
+[data-theme="light"] .time-picker-select option {
+  background: #ffffff;
+}
+
+.time-picker-separator {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--dash-text-secondary);
+}
+
+.time-picker-ampm {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.time-picker-ampm button {
+  background: #2a1f45;
+  border: 1px solid var(--dash-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-1) var(--space-2);
+  color: var(--dash-text-secondary);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+[data-theme="light"] .time-picker-ampm button {
+  background: #f3f2f7;
+}
+
+.time-picker-ampm button.active {
+  background: var(--purple-500);
+  border-color: var(--purple-500);
+  color: white;
+}
+
+.time-picker-ampm button:hover:not(.active) {
+  background: #352a50;
+  border-color: var(--purple-400);
+}
+
+[data-theme="light"] .time-picker-ampm button:hover:not(.active) {
+  background: #e8e7ec;
+}
+
+.time-picker-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--dash-border);
+}
+
+.time-picker-actions button {
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.time-picker-actions .tp-cancel {
+  background: transparent;
+  border: 1px solid var(--dash-border);
+  color: var(--dash-text-secondary);
+}
+
+.time-picker-actions .tp-cancel:hover {
+  background: var(--dash-surface-hover);
+}
+
+.time-picker-actions .tp-confirm {
+  background: var(--purple-500);
+  border: none;
+  color: white;
+}
+
+.time-picker-actions .tp-confirm:hover {
+  background: var(--purple-600);
+}
+
+/* Custom Date Picker */
+.date-picker-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  z-index: 100;
+}
+
+.date-picker-display {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: #1e1535;
+  border: 1px solid var(--dash-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  color: var(--dash-text);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+  height: 42px;
+  box-sizing: border-box;
+}
+
+[data-theme="light"] .date-picker-display {
+  background: #ffffff;
+}
+
+.date-picker-display:hover {
+  border-color: var(--purple-400);
+}
+
+.date-picker-display svg {
+  width: 16px;
+  height: 16px;
+  color: var(--dash-text-muted);
+  flex-shrink: 0;
+}
+
+.date-picker-dropdown {
+  position: fixed;
+  z-index: 99999;
+  background: #1e1535;
+  border: 1px solid var(--dash-border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  padding: var(--space-4);
+  display: none;
+  min-width: 280px;
+}
+
+[data-theme="light"] .date-picker-dropdown {
+  background: #ffffff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.date-picker-dropdown.open {
+  display: block;
+}
+
+.dp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+}
+
+.dp-title {
+  font-weight: 600;
+  color: var(--dash-text);
+  font-size: var(--text-base);
+}
+
+.dp-nav {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2a1f45;
+  border: 1px solid var(--dash-border);
+  border-radius: var(--radius-md);
+  color: var(--dash-text);
+  cursor: pointer;
+  font-size: var(--text-base);
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+[data-theme="light"] .dp-nav {
+  background: #f3f2f7;
+}
+
+.dp-nav:hover {
+  background: var(--purple-500);
+  border-color: var(--purple-500);
+  color: white;
+}
+
+.dp-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  margin-bottom: var(--space-2);
+}
+
+.dp-weekdays span {
+  text-align: center;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--dash-text-muted);
+  padding: var(--space-1);
+}
+
+.dp-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.dp-day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-sm);
+  color: var(--dash-text);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.dp-day:hover:not(.empty) {
+  background: var(--purple-500);
+  color: white;
+}
+
+.dp-day.empty {
+  cursor: default;
+}
+
+.dp-day.today {
+  border: 2px solid var(--purple-400);
+}
+
+.dp-day.selected {
+  background: var(--purple-500);
+  color: white;
+}

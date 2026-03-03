@@ -1,0 +1,235 @@
+﻿/* ========================================================================
+   GLOBAL TEXT SIZE NORMALIZATION
+   Ensures consistent body text and headings across all dashboard pages
+   ======================================================================== */
+
+/* Body text inside cards — consistent base size */
+.dashboard-content .card p,
+.dashboard-content .card td,
+.dashboard-content .card span,
+.dashboard-content .card li,
+.dashboard-content .card label,
+.dashboard-content .card .hint,
+.dashboard-content .card .muted {
+  font-size: var(--text-sm);
+}
+
+/* Card h3 headings — consistent across all pages */
+.dashboard-content .card h3 {
+  font-size: var(--text-lg) !important;
+  font-weight: 700;
+}
+
+/* Card h4 sub-headings */
+.dashboard-content .card h4 {
+  font-size: var(--text-base);
+  font-weight: 600;
+}
+
+/* Table content text */
+.dashboard-content table td {
+  font-size: var(--text-sm);
+}
+
+.dashboard-content table th {
+  font-size: var(--text-xs);
+}
+
+/* Filter form labels and inputs — consistent sizing */
+.dashboard-content form label {
+  font-size: var(--text-xs);
+}
+
+.dashboard-content form select,
+.dashboard-content form input[type="date"],
+.dashboard-content form input[type="text"],
+.dashboard-content form input[type="number"] {
+  font-size: var(--text-sm);
+}
+
+/* Notice text */
+.dashboard-content .notice {
+  font-size: var(--text-sm);
+}
+
+/* ========================================================================
+   FLATPICKR THEME OVERRIDE
+   Match flatpickr calendar to the app's dark/light theme
+   ======================================================================== */
+
+/* Dark theme (default) */
+.flatpickr-calendar {
+  background: #1e1535 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5) !important;
+  border-radius: 12px !important;
+  font-family: var(--font-sans) !important;
+}
+
+.flatpickr-months {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.flatpickr-months .flatpickr-month {
+  background: transparent !important;
+  color: #fff !important;
+}
+
+.flatpickr-current-month {
+  color: #fff !important;
+  font-weight: 600 !important;
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+  background: #2a1f45 !important;
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+  appearance: auto !important;
+  -webkit-appearance: menulist !important;
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months option {
+  background: #1e1535 !important;
+  color: #fff !important;
+}
+
+.flatpickr-current-month input.cur-year {
+  color: #fff !important;
+  font-weight: 600 !important;
+}
+
+.flatpickr-months .flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month {
+  color: rgba(255, 255, 255, 0.7) !important;
+  fill: rgba(255, 255, 255, 0.7) !important;
+}
+
+.flatpickr-months .flatpickr-prev-month:hover,
+.flatpickr-months .flatpickr-next-month:hover {
+  color: #fff !important;
+  fill: #fff !important;
+}
+
+span.flatpickr-weekday {
+  color: rgba(255, 255, 255, 0.4) !important;
+  font-weight: 600 !important;
+  font-size: 0.75rem !important;
+}
+
+.flatpickr-day {
+  color: rgba(255, 255, 255, 0.8) !important;
+  border-radius: 8px !important;
+}
+
+.flatpickr-day:hover {
+  background: rgba(139, 92, 246, 0.3) !important;
+  border-color: transparent !important;
+}
+
+.flatpickr-day.today {
+  border-color: var(--purple-400) !important;
+}
+
+.flatpickr-day.selected {
+  background: var(--purple-500) !important;
+  border-color: var(--purple-500) !important;
+  color: #fff !important;
+}
+
+.flatpickr-day.prevMonthDay,
+.flatpickr-day.nextMonthDay {
+  color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.numInputWrapper span {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.numInputWrapper span:hover {
+  background: rgba(139, 92, 246, 0.3) !important;
+}
+
+.numInputWrapper span svg path {
+  fill: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Alt input styling (the visible formatted input) */
+.dashboard-content input.flatpickr-input[type="text"] {
+  cursor: pointer;
+}
+
+/* Light theme overrides */
+[data-theme="light"] .flatpickr-calendar {
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+[data-theme="light"] .flatpickr-months .flatpickr-month {
+  color: #1a0a2e !important;
+}
+
+[data-theme="light"] .flatpickr-current-month {
+  color: #1a0a2e !important;
+}
+
+[data-theme="light"] .flatpickr-current-month .flatpickr-monthDropdown-months {
+  background: #f3f2f7 !important;
+  color: #1a0a2e !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-theme="light"] .flatpickr-current-month .flatpickr-monthDropdown-months option {
+  background: #ffffff !important;
+  color: #1a0a2e !important;
+}
+
+[data-theme="light"] .flatpickr-current-month input.cur-year {
+  color: #1a0a2e !important;
+}
+
+[data-theme="light"] .flatpickr-months .flatpickr-prev-month,
+[data-theme="light"] .flatpickr-months .flatpickr-next-month {
+  color: #4b5563 !important;
+  fill: #4b5563 !important;
+}
+
+[data-theme="light"] span.flatpickr-weekday {
+  color: #9ca3af !important;
+}
+
+[data-theme="light"] .flatpickr-day {
+  color: #1a0a2e !important;
+}
+
+[data-theme="light"] .flatpickr-day:hover {
+  background: rgba(139, 92, 246, 0.1) !important;
+}
+
+[data-theme="light"] .flatpickr-day.today {
+  border-color: var(--purple-500) !important;
+}
+
+[data-theme="light"] .flatpickr-day.selected {
+  background: var(--purple-500) !important;
+  color: #fff !important;
+}
+
+[data-theme="light"] .flatpickr-day.prevMonthDay,
+[data-theme="light"] .flatpickr-day.nextMonthDay {
+  color: rgba(0, 0, 0, 0.2) !important;
+}
+
+[data-theme="light"] .numInputWrapper span {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-theme="light"] .numInputWrapper span:hover {
+  background: rgba(139, 92, 246, 0.1) !important;
+}
+
+[data-theme="light"] .numInputWrapper span svg path {
+  fill: #4b5563 !important;
+}
