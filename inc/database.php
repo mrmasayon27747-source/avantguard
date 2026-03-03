@@ -5,15 +5,15 @@ declare(strict_types=1);
  * Database Configuration
  * 
  * This file contains the MySQL database connection settings.
- * Modify these values according to your XAMPP setup.
+ * Works for both Railway (production) and XAMPP (local).
  */
 
 // Database connection settings
-define('DB_HOST', 'localhost');
-define('DB_PORT', 3306); // XAMPP MySQL port
-define('DB_NAME', 'avantguard_payroll');
-define('DB_USER', 'root');
-define('DB_PASS', ''); // Default XAMPP MySQL has no password
+define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
+define('DB_PORT', (int)(getenv('DB_PORT') ?: 3306));
+define('DB_NAME', getenv('DB_NAME') ?: 'avantguard_payroll');
+define('DB_USER', getenv('DB_USER') ?: 'root');
+define('DB_PASS', getenv('DB_PASS') ?: '');
 define('DB_CHARSET', 'utf8mb4');
 
 /**
@@ -39,14 +39,13 @@ function get_db(): PDO
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
             PDO::ATTR_EMULATE_PREPARES => false,
-            PDO::ATTR_TIMEOUT => 5, // 5 second timeout
+            PDO::ATTR_TIMEOUT => 5,
             PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci"
         ];
         
         try {
             $pdo = new PDO($dsn, DB_USER, DB_PASS, $options);
         } catch (PDOException $e) {
-            // Log error and show user-friendly message
             error_log('Database connection failed: ' . $e->getMessage());
             throw new PDOException('Database connection failed. Please check your configuration.');
         }
