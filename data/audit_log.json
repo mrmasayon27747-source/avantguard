@@ -1,0 +1,835 @@
+[
+    {
+        "id": 1,
+        "timestamp": "2026-02-24 04:16:47",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 2,
+        "timestamp": "2026-02-24 04:17:22",
+        "event_type": "logout",
+        "user_id": 12,
+        "username": "queenyy",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "queenyy"
+        }
+    },
+    {
+        "id": 3,
+        "timestamp": "2026-02-24 04:17:28",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 4,
+        "timestamp": "2026-02-24 05:07:17",
+        "event_type": "logout",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 5,
+        "timestamp": "2026-02-24 05:07:46",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 6,
+        "timestamp": "2026-02-24 05:08:00",
+        "event_type": "login_failure",
+        "user_id": null,
+        "username": "ailene",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "ailene",
+            "reason": "user_not_found"
+        }
+    },
+    {
+        "id": 7,
+        "timestamp": "2026-02-24 05:08:06",
+        "event_type": "login_failure",
+        "user_id": null,
+        "username": "aileen",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "aileen",
+            "reason": "user_not_found"
+        }
+    },
+    {
+        "id": 8,
+        "timestamp": "2026-02-24 05:10:39",
+        "event_type": "login_failure",
+        "user_id": null,
+        "username": "aileen",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "aileen",
+            "reason": "user_not_found"
+        }
+    },
+    {
+        "id": 9,
+        "timestamp": "2026-02-24 05:11:14",
+        "event_type": "login_success",
+        "user_id": 5,
+        "username": "ailene_va",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "ailene_va"
+        }
+    },
+    {
+        "id": 10,
+        "timestamp": "2026-02-24 05:44:36",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 11,
+        "timestamp": "2026-02-24 05:44:52",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 12,
+        "timestamp": "2026-02-24 05:50:45",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 13,
+        "timestamp": "2026-02-24 05:53:47",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 14,
+        "timestamp": "2026-02-24 05:57:24",
+        "event_type": "logout",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 15,
+        "timestamp": "2026-02-24 05:57:34",
+        "event_type": "login_failure",
+        "user_id": null,
+        "username": "ailene_",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "ailene_",
+            "reason": "user_not_found"
+        }
+    },
+    {
+        "id": 16,
+        "timestamp": "2026-02-24 05:57:51",
+        "event_type": "login_failure",
+        "user_id": null,
+        "username": "Aileen_va",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "Aileen_va",
+            "reason": "user_not_found"
+        }
+    },
+    {
+        "id": 17,
+        "timestamp": "2026-02-24 05:58:04",
+        "event_type": "login_failure",
+        "user_id": null,
+        "username": "aileen_va",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "aileen_va",
+            "reason": "user_not_found"
+        }
+    },
+    {
+        "id": 18,
+        "timestamp": "2026-02-24 05:58:20",
+        "event_type": "login_failure",
+        "user_id": null,
+        "username": "aileen_va",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "aileen_va",
+            "reason": "user_not_found"
+        }
+    },
+    {
+        "id": 19,
+        "timestamp": "2026-02-24 05:58:36",
+        "event_type": "login_success",
+        "user_id": 12,
+        "username": "queenyy",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "queenyy"
+        }
+    },
+    {
+        "id": 20,
+        "timestamp": "2026-02-24 06:08:40",
+        "event_type": "logout",
+        "user_id": 12,
+        "username": "queenyy",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "queenyy"
+        }
+    },
+    {
+        "id": 21,
+        "timestamp": "2026-02-24 07:48:00",
+        "event_type": "login_failure",
+        "user_id": null,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin",
+            "reason": "wrong_password"
+        }
+    },
+    {
+        "id": 22,
+        "timestamp": "2026-02-24 07:48:04",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 23,
+        "timestamp": "2026-02-25 11:51:55",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 24,
+        "timestamp": "2026-02-25 11:52:44",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 25,
+        "timestamp": "2026-02-25 12:01:53",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 26,
+        "timestamp": "2026-02-25 12:03:26",
+        "event_type": "login_failure",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin",
+            "reason": "wrong_password"
+        }
+    },
+    {
+        "id": 27,
+        "timestamp": "2026-03-01 14:14:24",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 28,
+        "timestamp": "2026-03-01 14:21:33",
+        "event_type": "logout",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 29,
+        "timestamp": "2026-03-01 14:21:51",
+        "event_type": "login_success",
+        "user_id": 12,
+        "username": "queenyy",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "queenyy"
+        }
+    },
+    {
+        "id": 30,
+        "timestamp": "2026-03-01 14:24:55",
+        "event_type": "logout",
+        "user_id": 12,
+        "username": "queenyy",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "queenyy"
+        }
+    },
+    {
+        "id": 31,
+        "timestamp": "2026-03-01 14:24:59",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 32,
+        "timestamp": "2026-03-01 14:25:20",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 33,
+        "timestamp": "2026-03-01 14:25:37",
+        "event_type": "logout",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 34,
+        "timestamp": "2026-03-01 14:25:45",
+        "event_type": "login_failure",
+        "user_id": null,
+        "username": "queenyy",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "queenyy",
+            "reason": "wrong_password"
+        }
+    },
+    {
+        "id": 35,
+        "timestamp": "2026-03-01 14:25:56",
+        "event_type": "login_success",
+        "user_id": 12,
+        "username": "queenyy",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "queenyy"
+        }
+    },
+    {
+        "id": 36,
+        "timestamp": "2026-03-01 14:28:40",
+        "event_type": "logout",
+        "user_id": 12,
+        "username": "queenyy",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "queenyy"
+        }
+    },
+    {
+        "id": 37,
+        "timestamp": "2026-03-01 14:28:43",
+        "event_type": "logout",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 38,
+        "timestamp": "2026-03-01 14:29:20",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 39,
+        "timestamp": "2026-03-01 14:49:35",
+        "event_type": "logout",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 40,
+        "timestamp": "2026-03-01 14:49:44",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 41,
+        "timestamp": "2026-03-01 14:57:16",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 42,
+        "timestamp": "2026-03-01 14:57:55",
+        "event_type": "logout",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 43,
+        "timestamp": "2026-03-01 14:58:07",
+        "event_type": "login_failure",
+        "user_id": null,
+        "username": "charmv",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "charmv",
+            "reason": "user_not_found"
+        }
+    },
+    {
+        "id": 44,
+        "timestamp": "2026-03-01 15:01:32",
+        "event_type": "login_success",
+        "user_id": 13,
+        "username": "charmv",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "charmv"
+        }
+    },
+    {
+        "id": 45,
+        "timestamp": "2026-03-01 15:58:52",
+        "event_type": "logout",
+        "user_id": 13,
+        "username": "charmv",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "charmv"
+        }
+    },
+    {
+        "id": 46,
+        "timestamp": "2026-03-01 18:36:38",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 47,
+        "timestamp": "2026-03-01 18:56:06",
+        "event_type": "logout",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 48,
+        "timestamp": "2026-03-01 18:56:28",
+        "event_type": "login_failure",
+        "user_id": null,
+        "username": "mjborres",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "mjborres",
+            "reason": "user_not_found"
+        }
+    },
+    {
+        "id": 49,
+        "timestamp": "2026-03-01 18:59:17",
+        "event_type": "login_failure",
+        "user_id": null,
+        "username": "mjbor",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "mjbor",
+            "reason": "wrong_password"
+        }
+    },
+    {
+        "id": 50,
+        "timestamp": "2026-03-01 18:59:33",
+        "event_type": "login_success",
+        "user_id": 14,
+        "username": "mjbor",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "mjbor"
+        }
+    },
+    {
+        "id": 51,
+        "timestamp": "2026-03-01 18:59:42",
+        "event_type": "logout",
+        "user_id": 14,
+        "username": "mjbor",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "mjbor"
+        }
+    },
+    {
+        "id": 52,
+        "timestamp": "2026-03-01 19:00:15",
+        "event_type": "login_success",
+        "user_id": 14,
+        "username": "mjbor",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "mjbor"
+        }
+    },
+    {
+        "id": 53,
+        "timestamp": "2026-03-01 19:04:04",
+        "event_type": "login_failure",
+        "user_id": null,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin",
+            "reason": "wrong_password"
+        }
+    },
+    {
+        "id": 54,
+        "timestamp": "2026-03-01 19:04:09",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 55,
+        "timestamp": "2026-03-01 19:13:24",
+        "event_type": "logout",
+        "user_id": 14,
+        "username": "mjbor",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "mjbor"
+        }
+    },
+    {
+        "id": 56,
+        "timestamp": "2026-03-03 03:04:46",
+        "event_type": "login_failure",
+        "user_id": null,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin",
+            "reason": "wrong_password"
+        }
+    },
+    {
+        "id": 57,
+        "timestamp": "2026-03-03 03:04:50",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 58,
+        "timestamp": "2026-03-03 03:16:20",
+        "event_type": "login_success",
+        "user_id": 12,
+        "username": "queenyy",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "queenyy"
+        }
+    },
+    {
+        "id": 59,
+        "timestamp": "2026-03-03 03:31:05",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 60,
+        "timestamp": "2026-03-03 03:32:38",
+        "event_type": "logout",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 61,
+        "timestamp": "2026-03-03 03:32:46",
+        "event_type": "login_success",
+        "user_id": 12,
+        "username": "queenyy",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "queenyy"
+        }
+    },
+    {
+        "id": 62,
+        "timestamp": "2026-03-03 04:41:41",
+        "event_type": "login_success",
+        "user_id": 12,
+        "username": "queenyy",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "queenyy"
+        }
+    },
+    {
+        "id": 63,
+        "timestamp": "2026-03-03 04:43:40",
+        "event_type": "logout",
+        "user_id": 12,
+        "username": "queenyy",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "queenyy"
+        }
+    },
+    {
+        "id": 64,
+        "timestamp": "2026-03-03 04:43:46",
+        "event_type": "login_failure",
+        "user_id": null,
+        "username": "leilaa",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "leilaa",
+            "reason": "user_not_found"
+        }
+    },
+    {
+        "id": 65,
+        "timestamp": "2026-03-03 04:43:54",
+        "event_type": "login_failure",
+        "user_id": null,
+        "username": "ailene",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "ailene",
+            "reason": "user_not_found"
+        }
+    },
+    {
+        "id": 66,
+        "timestamp": "2026-03-03 04:44:48",
+        "event_type": "login_success",
+        "user_id": 5,
+        "username": "ailene_va",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "ailene_va"
+        }
+    },
+    {
+        "id": 67,
+        "timestamp": "2026-03-03 05:08:42",
+        "event_type": "login_success",
+        "user_id": 4,
+        "username": "admin",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "admin"
+        }
+    },
+    {
+        "id": 68,
+        "timestamp": "2026-03-03 05:09:31",
+        "event_type": "login_success",
+        "user_id": 5,
+        "username": "ailene_va",
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/145.0.0.0 Safari\/537.36",
+        "details": {
+            "username": "ailene_va"
+        }
+    }
+]
