@@ -1,17 +1,13 @@
 <?php
-declare(strict_types=1);
+define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
+define('DB_PORT', getenv('DB_PORT') ?: '3306');
+define('DB_NAME', getenv('DB_NAME') ?: 'avantguard');
+define('DB_USER', getenv('DB_USER') ?: 'root');
+define('DB_PASS', getenv('DB_PASS') ?: '');
 
-const APP_NAME = 'AVANT-GUARD VIRTUAL ASSISTANCE SERVICES';
-const STORAGE_MODE = 'mysql';  // Using MySQL database
+$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME, DB_PORT);
 
-$__dataDir = getenv('AVANTGUARD_DATA_DIR');
-
-if ($__dataDir && is_string($__dataDir)) {
-    define('DATA_DIR', rtrim($__dataDir, DIRECTORY_SEPARATOR));
-} else {
-    define('DATA_DIR', realpath(__DIR__ . '/../data'));
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
-
-if (!DATA_DIR) {
-    die('Data directory not found.');
-}
+?>
